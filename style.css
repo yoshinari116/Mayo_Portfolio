@@ -63,10 +63,10 @@ li{
     border-width: 2px;
     background-image: url(assets/web-bg.png);
     background-repeat: no-repeat;
-    background-size: cover; /* Resize the background to cover the entire section */
-    background-position: center; /* Center the background image */
+    background-size: cover; 
+    background-position: center;
 
-    display: flex; /* Make the .intro a flex container */
+    display: flex;
     justify-content: center; /* Space between the children */
     align-items: center; /* Vertically center the items */
     padding: 0 20px; /* Optional padding */
