@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section {
+    height: 130vh;
+ 
+    background-color: rgb(197, 197, 197);
+    border-color: rgb(146, 0, 204); /* Specify the color here */
+    border-style: solid; /* Add this line */
+    border-width: 0px; /* Add this line */
+    margin: 0px;
+}
+header{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(37, 37, 37);
+
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    color: rgb(255, 255, 255)
+}
+.logo1 {
+    height: 7vh; 
+
+    display: flex; 
+    margin-left: 10px;
+}
+
+.logo1 img {
+    max-height: 100%; 
+    max-width: 100%;  
+    object-fit: contain; 
+}
+
+ul{
+    display: flex;
+    
+    
+}
+li{
+    width: 200px;
+    list-style: none;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+    border-color: rgb(146, 0, 204); /* Specify the color here */
+    border-style: solid; /* Add this line */
+    border-width: 2px; /* Add this line */
+}
+.intro{
+    height: 50vh;
+    border-color: rgb(0, 180, 204); /* Specify the color here */
+    border-style: solid;
+    border-width: 2px;
+    background-image:url(assets/web-bg.png);
+    background-repeat: no-repeat;
+    
+    
+
+    display: flex; /* Make the .intro a flex container */
+    justify-content: center; /* Space between the children */
+    align-items: center; /* Vertically center the items */
+    padding: 0 20px; /* Optional padding */
+
+}
+.logo2 {
+    height: 50vh; 
+    display: flex; 
+
+}
+
+.logo2 img {
+    max-height: 100%; 
+    max-width: 100%;  
+    object-fit: contain; 
+}
+.webname{
+    width: 50vh;
+    color: white;
+    border-color: rgb(0, 180, 204); /* Specify the color here */
+    border-style: solid; /* Add this line */
+    border-width: 2px; /* Add this line */
+
+}
+.title{
+    font-size: 40px;
+    
+}
+.subtitle{
+    font-size: 30px;
+    margin-left:100px;
+}
