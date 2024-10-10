@@ -58,19 +58,18 @@ li{
 }
 .intro{
     height: 50vh;
-    border-color: rgb(0, 180, 204); /* Specify the color here */
+    border-color: rgb(0, 180, 204);
     border-style: solid;
     border-width: 2px;
-    background-image:url(assets/web-bg.png);
+    background-image: url(assets/web-bg.png);
     background-repeat: no-repeat;
-    
-    
+    background-size: cover; /* Resize the background to cover the entire section */
+    background-position: center; /* Center the background image */
 
     display: flex; /* Make the .intro a flex container */
     justify-content: center; /* Space between the children */
     align-items: center; /* Vertically center the items */
     padding: 0 20px; /* Optional padding */
-
 }
 .logo2 {
     height: 50vh; 
