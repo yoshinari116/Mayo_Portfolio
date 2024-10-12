@@ -3,74 +3,65 @@
     padding: 0;
     box-sizing: border-box;
 }
-section{
-    height: 100vh;
-        /* background-color: rgb(255, 255, 255);
-        border-color: rgb(146, 0, 204);
-        border-style: solid; 
-        border-width: 1px;  */
-}
-header{
-    height: 60px;
+
+header {
+    position: sticky;
+    top: 0px;
+    height: 8vh;
     width: 100%;
     background-color: rgb(37, 37, 37);
-    box-shadow: 0 -5px 20px 10px #292929;
-
+    box-shadow: 0 -5vh 2vh 5vh #292929;
 
     display: flex;
-    position: sticky;
     justify-content: space-between;
     align-items: center;
-    font-size: 15px;
-    color: rgb(255, 255, 255)
+    font-size: 3vh;
+    color: rgb(255, 255, 255);
 }
+
 .logo1 {
-    height: 5vh; 
-
-    display: flex; 
-    margin-left: 20px;
+    z-index: 1;
+    height: 5vh;
+    margin-top: -0.5vh;
+    margin-left: 3vh;
+    display: flex;
 }
-
-.logo1 img {
-    max-height: 100%; 
-    max-width: 100%;  
-    object-fit: contain; 
-}
-
-ul{
+.nav {
     display: flex;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 15px;
-    
-    
+    font-size: 2vh;
+    width: 100%; 
+    margin: 0;
 }
-li{
-    width: 200px;
+
+li {
+    width: 20vh;
     list-style: none;
-    /* border-color: rgb(146, 0, 204); 
-    border-style: solid;
-    border-width: 2px; */
-    
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* LOGO ANF NAME OF WEBSITE */
+
+section{
+    height: 100vh;
+    border-color: rgb(31, 216, 62); 
+    border-style: solid;
+    border-width: 0.3vh;
+}
+
+/* LOGO AND NAME OF WEBSITE */
 
 .intro{
-    height: 40vh;
-    /* border-color: rgb(0, 180, 204);
-    border-style: solid;
-    border-width: 2px; */
-
+    height: 45%;
+    width: 100%;
     background-image: url(assets/web_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    box-shadow:inset 0 -70px 100px -30px #111111;
+    box-shadow:inset 0 -5vh 15vh -2vh #111111;
 
     display: flex;
     justify-content: center; 
@@ -87,39 +78,36 @@ li{
     max-width: 100%;  
 }
 .webname{
-    width: 55vh;
-    /* border-color: rgb(146, 0, 204); 
-    border-style: solid;
-    border-width: 2px; */
+    width: 60vh;
     color: white;
-    margin-left: 50px;
-    letter-spacing: 10px;
+    margin-left: 5vh;
+    letter-spacing: 0.5vh;
 }
 .title{
-    font-size: 40px;
-    font-family: "Teko", sans-serif;
+    font-size: 5vh;
+    font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-weight: 1000;
     font-style: italic;
 }
 .subtitle{
-    font-size: 25px;
-    font-family: "Teko", sans-serif;
+    font-size: 3vh;
+    font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: italic;
-    margin-left: 100px;
+    margin-left: 15vh;
 }
 
 /* ABOUT ME */
 
 .About {
-    height: 45vh;
-    border-top: 3px solid #000000; 
-    border-bottom: 3px solid #000000; 
-    margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
+    height: 38vh;
+    border-top: 0.5vh solid #000000; 
+    border-bottom: 0.5vh solid #000000; 
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
 
     display: flex; 
     flex-direction: row;
@@ -127,29 +115,32 @@ li{
     align-items: center; /
 }
 .aboutTitle {
-    margin-left: 50px;
+    margin-left:  5%;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 80px;
+    font-size: 8vh;
 }
 .desc {
-    
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
     font-style: normal;
-    font-size: 25px;
+    font-size: 2.5vh;
+    letter-spacing: .5vh;
 }
 .author{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 16px;
-    letter-spacing: 2px;
+    font-size: 2vh;
+    letter-spacing: 0.9vh;
 }
 .web_pf {
-    height: 30vh;
-    margin-right: 150px;
+    height: 25vh;
+    width: auto;
+    margin-right: 10vh;
 
     display: flex;
     flex-direction: column;
@@ -162,35 +153,98 @@ li{
 
 /* INTEREST PAGE */
 
-section{
+.section2{
     height: 100vh;
-    background-color: rgb(255, 255, 255);
-        border-color: rgb(125, 117, 128);
-        border-style: solid; 
-        border-width: 1px;
+    border-color: rgb(165, 201, 81); 
+    border-style: solid;
+    border-width: 0.3vh;
+    
 }
 .interest{
-    height: 90vh;
-    border-top: 3px solid #000000; 
-    margin-top: 80px;
-    margin-left: 100px;
-    margin-right: 100px;
+    height: 88.4vh;
+    border-top: 0.5vh solid #000000; 
+    margin-top: 5vh;
+    margin-left: 5%;
+    margin-right: 5%;
 
+    /* display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+.TitleBorder{
+    width: 100%;
     display: flex; 
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center; /
+
+    justify-content: center;
+    align-items: center;
 }
 .interestTitle {
-    position: absolute; /* Position the title absolutely */
-    top: 990px; /* Adjust the position to overlay the border */
-    left: 50%; /* Center the title horizontally */
-    transform: translateX(-50%); /* Offset to center the element exactly */
-    background-color: white; 
-    padding: 0 30px; 
-
+    width: 30vh;
+    margin-top: -2.1%;
+    background-color: rgb(255, 255, 255); 
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 50px;
+    font-size: 5vh;
+
+    display: flex;
+    justify-content: center
+}
+.interestList{
+    height: 80vh;
+    margin-top: 2.5vh;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12vh;
+    color: rgb(255, 255, 255);
+    width: 100%; 
+    list-style: none;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+.GRPHC{
+    height: 100%;
+    width: 80%;
+    background-image: url(assets/Graphic-designing.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2vh;
+    box-shadow: 0 1vh 3vh 1vh #818181;
+}
+.VDGMS{
+    height: 100%;
+    width: 80%;
+    background-image: url(assets/videogames.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2vh;
+    box-shadow: 0 1vh 3vh 1vh #818181;
+}
+.MVS{
+    height: 100%;
+    width: 80%;
+    background-image: url(assets/movies.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2vh;
+    box-shadow: 0 1vh 3vh 1vh #818181;
+}
+
+/* SKILLS PAGE */
+
+.section3{
+    height: 100vh;
+    border-color: rgb(201, 81, 147); 
+    border-style: solid;
+    border-width: 0.3vh;
+    
 }
