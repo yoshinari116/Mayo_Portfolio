@@ -3,19 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-section {
-    height: 130vh;
- 
-    background-color: rgb(197, 197, 197);
-    border-color: rgb(146, 0, 204); /* Specify the color here */
-    border-style: solid; /* Add this line */
-    border-width: 0px; /* Add this line */
-    margin: 0px;
+section{
+    height: 100vh;
+        /* background-color: rgb(255, 255, 255);
+        border-color: rgb(146, 0, 204);
+        border-style: solid; 
+        border-width: 1px;  */
 }
 header{
-    height: 80px;
+    height: 60px;
     width: 100%;
     background-color: rgb(37, 37, 37);
+    box-shadow: 0 -5px 20px 10px #292929;
+
 
     display: flex;
     position: sticky;
@@ -25,10 +25,10 @@ header{
     color: rgb(255, 255, 255)
 }
 .logo1 {
-    height: 7vh; 
+    height: 5vh; 
 
     display: flex; 
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .logo1 img {
@@ -39,62 +39,158 @@ header{
 
 ul{
     display: flex;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
     
     
 }
 li{
     width: 200px;
     list-style: none;
+    /* border-color: rgb(146, 0, 204); 
+    border-style: solid;
+    border-width: 2px; */
     
     display: flex;
     justify-content: center;
     align-items: center;
-    
-
-
-    border-color: rgb(146, 0, 204); /* Specify the color here */
-    border-style: solid; /* Add this line */
-    border-width: 2px; /* Add this line */
 }
+
+/* LOGO ANF NAME OF WEBSITE */
+
 .intro{
-    height: 50vh;
-    border-color: rgb(0, 180, 204);
+    height: 40vh;
+    /* border-color: rgb(0, 180, 204);
     border-style: solid;
-    border-width: 2px;
-    background-image: url(assets/web-bg.png);
+    border-width: 2px; */
+
+    background-image: url(assets/web_bg.png);
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
+    box-shadow:inset 0 -70px 100px -30px #111111;
 
     display: flex;
-    justify-content: center; /* Space between the children */
-    align-items: center; /* Vertically center the items */
-    padding: 0 20px; /* Optional padding */
+    justify-content: center; 
+    align-items: center; 
+    
 }
 .logo2 {
-    height: 50vh; 
+    height: 30vh; 
     display: flex; 
 
 }
-
 .logo2 img {
+    max-height: 100%; 
+    max-width: 100%;  
+}
+.webname{
+    width: 55vh;
+    /* border-color: rgb(146, 0, 204); 
+    border-style: solid;
+    border-width: 2px; */
+    color: white;
+    margin-left: 50px;
+    letter-spacing: 10px;
+}
+.title{
+    font-size: 40px;
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: italic;
+}
+.subtitle{
+    font-size: 25px;
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: italic;
+    margin-left: 100px;
+}
+
+/* ABOUT ME */
+
+.About {
+    height: 45vh;
+    border-top: 3px solid #000000; 
+    border-bottom: 3px solid #000000; 
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; /
+}
+.aboutTitle {
+    margin-left: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 80px;
+}
+.desc {
+    
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+.author{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.web_pf {
+    height: 30vh;
+    margin-right: 150px;
+
+    display: flex;
+    flex-direction: column;
+}
+.web_pf img {
     max-height: 100%; 
     max-width: 100%;  
     object-fit: contain; 
 }
-.webname{
-    width: 50vh;
-    color: white;
-    border-color: rgb(0, 180, 204); /* Specify the color here */
-    border-style: solid; /* Add this line */
-    border-width: 2px; /* Add this line */
 
+/* INTEREST PAGE */
+
+section{
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+        border-color: rgb(125, 117, 128);
+        border-style: solid; 
+        border-width: 1px;
 }
-.title{
-    font-size: 40px;
-    
+.interest{
+    height: 90vh;
+    border-top: 3px solid #000000; 
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; /
 }
-.subtitle{
-    font-size: 30px;
-    margin-left:100px;
+.interestTitle {
+    position: absolute; /* Position the title absolutely */
+    top: 990px; /* Adjust the position to overlay the border */
+    left: 50%; /* Center the title horizontally */
+    transform: translateX(-50%); /* Offset to center the element exactly */
+    background-color: white; 
+    padding: 0 30px; 
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
 }
