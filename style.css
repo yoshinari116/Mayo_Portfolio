@@ -269,20 +269,287 @@ section{
     display: flex;
     justify-content: center
 }
-.skillBorder{
+.skillBorderOuter{
     height: 100%;
     width: 100%;
-    border-color: rgb(255, 197, 197); 
-    border-style: solid;
-    border-width: 0.3vh;
+
+    display: flex;
+    justify-content: center;
+}
+.skillBorderInner{
+    height: 100%;
+    width: 90%;    
+    margin-top: 3vh;
+
+    display: flex;
+    align-content: center;
 }
 .LeftSide{
     height: 100%;
-    width: 50%;
+    width: 60%;
+}
+.listTopTitle{
+    font-family: "Righteous", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4vh;
+    letter-spacing: .3vh;
+
+    border-bottom: solid #000000; 
+    border-width: 0.5vh;
+    margin-right: 20vh;
+}
+.listTop{
+    height: 40vh;
+    margin-top: 2vh;
+
+    display: flex;
+    flex-direction: column;
+
+}
+.CANVA{
+    height: 100%;
+    width: 100%;    
+}
+.CANVA-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.CANVAlogo {
+    height: 10vh;
+    z-index: 1;
+    display: flex;
+   
+}
+.CANVAcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.CANVAtitle {
+    width: 10vh;
+    font-family: "Poppins", sans-serif;
+    font-size: 3vh;
+    font-weight: bold;
+    color: black;
+    margin-top: -3vh;
+    margin-left: 1vh;
+}
+.CANVAbar {
+    width: 60vh; 
+    height: 3vh;
+    background: linear-gradient(to right, #f77aff, #8c0fff);
+    border-radius: 1vh;
+    margin-left: -5vh;
+
+}
+.CS3{
+    height: 100%;
+    width: 100%;
+}
+.CS3-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.CS3logo {
+    height: 10vh;
+    z-index: 1;
+    display: flex;
+   
+}
+.CS3content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.CS3title {
+    width: 30vh;
+    font-family: "Poppins", sans-serif;
+    font-size: 3vh;
+    font-weight: bold;
+    color: black;
+    margin-top: -3vh;
+    margin-left: 1vh;
+
+}
+.CS3bar {
+    width: 40vh; 
+    height: 3vh;
+    background: linear-gradient(to right, #f77aff, #8c0fff);
+    border-radius: 1vh;
+    margin-left: -5vh;
+}
+.PEA{
+    height: 100%;
+    width: 100%;    
+}
+.PEA-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.PEAlogo {
+    height: 10vh;
+    z-index: 1;
+    display: flex;
+   
+}
+.PEAcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.PEAtitle {
+    width: 25vh;
+    font-family: "Poppins", sans-serif;
+    font-size: 3vh;
+    font-weight: bold;
+    color: black;
+    margin-top: -3vh;
+    margin-left: 1vh;
+}
+.PEAbar {
+    width: 50vh; 
+    height: 3vh;
+    background: linear-gradient(to right, #f77aff, #8c0fff);
+    border-radius: 1vh;
+    margin-left: -5vh;
+}
+
+
+.listBotTitle{
+    font-family: "Righteous", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4vh;
+    letter-spacing: .3vh;
+
+    border-bottom: solid #000000; 
+    border-width: 0.5vh;
+    margin-right: 20vh;
+}
+.listBot{
+    height: 25vh;
+    margin-top: 3vh;
+
+    display: flex;
+    flex-direction: column;
+
+}
+.JAVA{
+    height: 90%;
+    width: 100%;    
+}
+.JAVA-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+.JAVAlogo {
+    height: 10vh;
+    z-index: 1;
+    display: flex;
+   
+}
+.JAVAcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.JAVAtitle {
+    width: 10vh;
+    font-family: "Poppins", sans-serif;
+    font-size: 3vh;
+    font-weight: bold;
+    color: black;
+    margin-top: -3vh;
+    margin-left: 1vh;
+    
+}
+.JAVAbar {
+    width: 45vh; 
+    height: 3vh;
+    background: linear-gradient(to right, #f77aff, #8c0fff);
+    border-radius: 1vh;
+    margin-left: -5vh;
+
+}
+.HTML{
+    height: 90%;
+    width: 100%;
+}
+.HTML-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+.HTMLlogo {
+    height: 10vh;
+    z-index: 1;
+    display: flex;
+   
+}
+.HTMLcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.HTMLtitle {
+    width: 25vh;
+    font-family: "Poppins", sans-serif;
+    font-size: 3vh;
+    font-weight: bold;
+    color: black;
+    margin-top: -3vh;
+    margin-left: 1vh;
+}
+.HTMLbar {
+    width: 38vh; 
+    height: 3vh;
+    background: linear-gradient(to right, #f77aff, #8c0fff);
+    border-radius: 1vh;
+    margin-left: -5vh;
+}
+
+.RightSide{
+    height: 100%;
+    width: 40%;
     border-color: rgb(155, 17, 17); 
     border-style: solid;
     border-width: 0.3vh;
 }
-.RightSide{
+.listTopTitle2{
+    font-family: "Righteous", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4vh;
+    letter-spacing: .3vh;
 
+    border-bottom: solid #000000; 
+    border-width: 0.5vh;
+    display: flex;
+    justify-content: center;
+    
 }
+.listTop2{
+    height: 40vh;
+    margin-top: 2vh;
+
+    display: flex;
+    flex-direction: row;
+    /* border-color: rgb(155, 17, 17); 
+    border-style: solid;
+    border-width: 0.3vh; */
+}
+.overview1{
+    height: 10vh;
+    width: 100%;
+    /* border-color: rgb(49, 94, 153); 
+    border-style: solid;
+    border-width: 0.3vh; */
+}
+
