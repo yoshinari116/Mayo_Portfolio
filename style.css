@@ -10,7 +10,7 @@ header {
     height: 8vh;
     width: 100%;
     background-color: rgb(37, 37, 37);
-    box-shadow: 0 -5vh 2vh 5vh #292929;
+    box-shadow: 0 -5vh 2vh 5vh #0000007c;
 
     display: flex;
     justify-content: space-between;
@@ -19,10 +19,10 @@ header {
     color: rgb(255, 255, 255);
 }
 
-.logo1 {
+.HeaderLogo {
     z-index: 1;
-    height: 5vh;
-    margin-top: -0.5vh;
+    height: 7vh;
+    margin-top: 0vh;
     margin-left: 3vh;
     display: flex;
 }
@@ -47,62 +47,60 @@ li {
 
 section{
     height: 100vh;
-    border-color: rgb(31, 216, 62); 
-    border-style: solid;
-    border-width: 0.3vh;
 }
 
 /* LOGO AND NAME OF WEBSITE */
 
 .intro{
-    height: 45%;
+    height: 40%;
     width: 100%;
     background-image: url(assets/web_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    box-shadow:inset 0 -5vh 15vh -2vh #111111;
+    box-shadow:inset 0 -5vh 15vh -2vh #000000;
 
     display: flex;
     justify-content: center; 
     align-items: center; 
     
 }
-.logo2 {
-    height: 30vh; 
+.TitleLogo{
+    height: 38vh; 
+    margin-left: 5vh;
     display: flex; 
 
 }
-.logo2 img {
+.TitleLogo img {
     max-height: 100%; 
     max-width: 100%;  
 }
 .webname{
-    width: 60vh;
-    color: white;
+    width: 100vh;
     margin-left: 5vh;
-    letter-spacing: 0.5vh;
+
+    font-family: "Righteous", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+    color: white;
+    letter-spacing: 0.8vh;
 }
 .title{
-    font-size: 5vh;
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
+    font-size: 4vh;
     font-weight: 1000;
-    font-style: italic;
+    text-shadow: 0vh .5vh 2vh #000000af;
 }
 .subtitle{
-    font-size: 3vh;
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
+    margin-left: 16vh;
+    font-size: 2.5vh;
     font-weight: 500;
-    font-style: italic;
-    margin-left: 15vh;
+    text-shadow: 0vh .5vh 2vh #000000af;
 }
 
 /* ABOUT ME */
 
 .About {
-    height: 38vh;
+    height: 50vh;
     border-top: 0.5vh solid #000000; 
     border-bottom: 0.5vh solid #000000; 
     margin-top: 2%;
@@ -116,29 +114,31 @@ section{
 }
 .aboutTitle {
     margin-left:  5%;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
+
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 8vh;
+    font-size: 10vh;
 }
 .desc {
     padding-top: 3vh;
     padding-bottom: 3vh;
-    font-family: "Quicksand", sans-serif;
-    font-weight: 500;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 2.5vh;
+    font-size: 3vh;
     letter-spacing: .5vh;
 }
 .author{
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    font-family: "Righteous", sans-serif;
+    font-weight: 300;
     font-style: normal;
-    font-size: 2vh;
-    letter-spacing: 0.9vh;
+    font-size: 3vh;
+    letter-spacing: .5vh;
 }
 .web_pf {
-    height: 25vh;
+    height: 40vh;
     width: auto;
     margin-right: 10vh;
 
@@ -155,10 +155,6 @@ section{
 
 .section2{
     height: 100vh;
-    border-color: rgb(165, 201, 81); 
-    border-style: solid;
-    border-width: 0.3vh;
-    
 }
 .interest{
     height: 88.4vh;
@@ -183,24 +179,31 @@ section{
     width: 30vh;
     margin-top: -2.1%;
     background-color: rgb(255, 255, 255); 
-    font-family: "Poppins", sans-serif;
+    font-family: "Righteous", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 5vh;
+    letter-spacing: .3vh;
 
     display: flex;
     justify-content: center
 }
 .interestList{
     height: 80vh;
+    width: 100%; 
     margin-top: 2.5vh;
-    font-family: "Poppins", sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family: "Righteous", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 12vh;
-    color: rgb(255, 255, 255);
-    width: 100%; 
+    letter-spacing: .5vh;
     list-style: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 0vh 1vh 2vh #000000a4;
     
     display: flex;
     justify-content: center;
@@ -212,31 +215,22 @@ section{
     height: 100%;
     width: 80%;
     background-image: url(assets/Graphic-designing.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     border-radius: 2vh;
-    box-shadow: 0 1vh 3vh 1vh #818181;
+    box-shadow: 0 1vh 2vh 1vh #0000004f;
 }
 .VDGMS{
     height: 100%;
     width: 80%;
     background-image: url(assets/videogames.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     border-radius: 2vh;
-    box-shadow: 0 1vh 3vh 1vh #818181;
+    box-shadow: 0 1vh 2vh 1vh #0000004f;
 }
 .MVS{
     height: 100%;
     width: 80%;
     background-image: url(assets/movies.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     border-radius: 2vh;
-    box-shadow: 0 1vh 3vh 1vh #818181;
+    box-shadow: 0 1vh 2vh 1vh #0000004f;
 }
 
 /* SKILLS PAGE */
@@ -247,4 +241,48 @@ section{
     border-style: solid;
     border-width: 0.3vh;
     
+}
+.skills{
+    height: 88.4vh;
+    border-top: 0.5vh solid #000000; 
+    margin-top: 5vh;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.TitleBorder{
+    width: 100%;
+    display: flex; 
+
+    justify-content: center;
+    align-items: center;
+}
+.skillTitle{
+    width: 23vh;
+    margin-top: -2.1%;
+    background-color: rgb(255, 255, 255); 
+    font-family: "Righteous", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5vh;
+    letter-spacing: .3vh;
+
+    display: flex;
+    justify-content: center
+}
+.skillBorder{
+    height: 100%;
+    width: 100%;
+    border-color: rgb(255, 197, 197); 
+    border-style: solid;
+    border-width: 0.3vh;
+}
+.LeftSide{
+    height: 100%;
+    width: 50%;
+    border-color: rgb(155, 17, 17); 
+    border-style: solid;
+    border-width: 0.3vh;
+}
+.RightSide{
+
 }
