@@ -250,10 +250,6 @@ section{
 
 .section3{
     height: 100vh;
-    border-color: rgb(201, 81, 147); 
-    border-style: solid;
-    border-width: 0.3vh;
-    
 }
 .skills{
     height: 88.4vh;
@@ -586,4 +582,11 @@ section{
     display: flex;
     align-content: flex-start;
     flex-direction: column;
+}
+.section4{
+    height: 100vh;
+    border-color: rgb(201, 81, 147); 
+    border-style: solid;
+    border-width: 0.3vh;
+    
 }
