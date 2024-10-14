@@ -27,18 +27,19 @@ header {
     display: flex;
 }
 .nav {
-    display: flex;
+    width: 100%; 
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 2vh;
-    width: 100%; 
+    /* list-style: none; */
+
+    display: flex;
     margin: 0;
 }
 
-li {
+.nav_opt{
     width: 20vh;
-    list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,6 +218,10 @@ section{
     background-image: url(assets/Graphic-designing.png);
     border-radius: 2vh;
     box-shadow: 0 1vh 2vh 1vh #0000004f;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .VDGMS{
     height: 100%;
@@ -224,6 +229,10 @@ section{
     background-image: url(assets/videogames.png);
     border-radius: 2vh;
     box-shadow: 0 1vh 2vh 1vh #0000004f;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .MVS{
     height: 100%;
@@ -231,6 +240,10 @@ section{
     background-image: url(assets/movies.png);
     border-radius: 2vh;
     box-shadow: 0 1vh 2vh 1vh #0000004f;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* SKILLS PAGE */
@@ -302,6 +315,7 @@ section{
 .listTop{
     height: 40vh;
     margin-top: 2vh;
+    list-style: none;
 
     display: flex;
     flex-direction: column;
@@ -331,8 +345,7 @@ section{
     width: 10vh;
     font-family: "Poppins", sans-serif;
     font-size: 3vh;
-    font-weight: bold;
-    color: black;
+    font-weight: 700;
     margin-top: -3vh;
     margin-left: 1vh;
 }
@@ -368,8 +381,7 @@ section{
     width: 30vh;
     font-family: "Poppins", sans-serif;
     font-size: 3vh;
-    font-weight: bold;
-    color: black;
+    font-weight: 700;
     margin-top: -3vh;
     margin-left: 1vh;
 
@@ -405,8 +417,7 @@ section{
     width: 25vh;
     font-family: "Poppins", sans-serif;
     font-size: 3vh;
-    font-weight: bold;
-    color: black;
+    font-weight: 700;
     margin-top: -3vh;
     margin-left: 1vh;
 }
@@ -433,6 +444,7 @@ section{
 .listBot{
     height: 25vh;
     margin-top: 3vh;
+    list-style: none;
 
     display: flex;
     flex-direction: column;
@@ -463,8 +475,7 @@ section{
     width: 10vh;
     font-family: "Poppins", sans-serif;
     font-size: 3vh;
-    font-weight: bold;
-    color: black;
+    font-weight: 700;
     margin-top: -3vh;
     margin-left: 1vh;
     
@@ -502,8 +513,7 @@ section{
     width: 25vh;
     font-family: "Poppins", sans-serif;
     font-size: 3vh;
-    font-weight: bold;
-    color: black;
+    font-weight: 700;
     margin-top: -3vh;
     margin-left: 1vh;
 }
@@ -518,9 +528,9 @@ section{
 .RightSide{
     height: 100%;
     width: 40%;
-    border-color: rgb(155, 17, 17); 
+    /* border-color: rgb(155, 17, 17); 
     border-style: solid;
-    border-width: 0.3vh;
+    border-width: 0.3vh; */
 }
 .listTopTitle2{
     font-family: "Righteous", sans-serif;
@@ -537,19 +547,43 @@ section{
 }
 .listTop2{
     height: 40vh;
-    margin-top: 2vh;
+    margin-top: 5vh;    
 
-    display: flex;
-    flex-direction: row;
-    /* border-color: rgb(155, 17, 17); 
-    border-style: solid;
-    border-width: 0.3vh; */
+    display: flex; 
 }
-.overview1{
-    height: 10vh;
+.overview_top{
+    height: 40vh;
     width: 100%;
-    /* border-color: rgb(49, 94, 153); 
-    border-style: solid;
-    border-width: 0.3vh; */
-}
+    margin-left: 3vh;
 
+    font-family: "Poppins", sans-serif;
+    font-size: 3vh;
+    font-weight: 500;
+    
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+}
+.overview_desc{
+    height:100%;
+    width:100%;
+}
+.listBot2{
+    height: 25vh;
+    margin-top: 10vh;    
+
+    display: flex; 
+}
+.overview_bot{
+    height: 20vh;
+    width: 100%;
+    margin-left: 3vh;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 3vh;
+    font-weight: 500;
+    
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+}
