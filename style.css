@@ -127,7 +127,7 @@ header {
  .about-container{
     height: 30%;
     background-color: #373339;
-    box-shadow: 0vh -1vh 10vh 5vh #0000007d;
+    box-shadow: 0vh -1vh 10vh 2vh #0000007d;
     padding: 2rem;
     color: white;
 }
@@ -136,14 +136,14 @@ header {
     width: 15rem;
     display: inline-block;
     background-color: white;
-    color: black;
-    font-weight: bold;
+    color: #373339;
+    font-weight: 800;
     padding: 0.4rem 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     position: relative;
-    top: -4rem;
+    top: -3.5rem;
     left: 5rem;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0vh .8vh 1vh .8vh rgba(0, 0, 0, 0.2);
 
     display: flex;
     justify-content: center;
@@ -155,18 +155,42 @@ header {
     
 }
 .about-desc{
-    width: 80%;
+    width: 70%;
     margin-top: 1vh;
-    font-size: .8rem;
+    font-size: 1rem;
+    word-spacing: .5rem;
 }
 
 /* ===================================================INTEREST=================================================== */
 
  .interest-section{
     height: 100vh;
-    background-color: #373339;
+    background-color: hsl(280, 7%, 27%);
+    color: white;
+
+    display: flex;
+    justify-content: center;
+ }
+ .title-box{
+    height: 1vh;
+    width: 90%;
+    margin-top: 5vh;
+    border-bottom: .4vh solid hsl(281, 77%, 66%);
+ }
+ .interest-header{
+    width: 20vh;
+    position: relative;
+    top: -1.2vh;
+    left: 140vh;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: .2rem;
+    background-color: hsl(280, 7%, 27%);
+    display: flex;
+    justify-content: center;
  }
 
+ 
 /* ===================================================responsive=================================================== */
 
 @media  {
