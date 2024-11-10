@@ -7,7 +7,7 @@
 
 header {
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     height: 8vh;
     width: 100%;
     background: linear-gradient(to right, #C898DF, #552974);
@@ -134,8 +134,8 @@ header {
     background-color: white;
     color: #312d33;
     font-weight: 800;
-    padding: 0.4rem 1rem;
     font-size: 1.5rem;
+    padding: 0.4rem 1rem;
     position: relative;
     top: -3.5rem;
     left: 15rem;
@@ -153,7 +153,7 @@ header {
 .about-desc{
     width: 60%;
     margin-top: 1vh;
-    font-size: .9rem;
+    font-size: 1rem;
     word-spacing: .5rem;
 }
 
@@ -179,16 +179,16 @@ header {
     position: relative;
     top: -.5vh;
     left: 140vh;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 800;
-    letter-spacing: .4rem;
+    letter-spacing: .3rem;
     background-color: #312d33;
     display: flex;
     justify-content: center;
  }
  .interest-box{
     height: 70%;
-    width: 80%;
+    width: 50%;
     margin-top: 10vh;
     margin-bottom: 20vh;
     font-size: 4rem;
@@ -197,7 +197,7 @@ header {
     letter-spacing: .2rem;
     display: flex;
     flex-direction: column;
-    gap: 6vh;
+    gap: 10vh;
  }
  .inter1{
     height: 100%;
@@ -294,41 +294,34 @@ header {
    display: flex;
    justify-content: center;
 }
-.services-parent{
-   height: 95%;
+.services-box{
+   height: 80%;
    display: flex;
    justify-content: center;
    align-items: center;
-}
-.services-child{
-   height: 60%;
-   width: 70%;
-   list-style: none;
-   display: flex;
-   justify-content: center;
-   gap: 10vh;
+   gap: 15vh;
 }
 .service{
-   height: 100%;
-   width:30vh;
-   font-size: 1.5rem;
-   font-weight: 400;
+   height: 60%;
+   width:25vh;
+   background-color: #3e3941;
+   font-size: 1rem;
+   font-weight: 500;
    line-height: 2.5vh;
    color: white;
-   box-shadow: 0vh .5vh 1vh .5vh rgba(0, 0, 0, 0.342);
+   box-shadow: 0vh .5vh 1vh .5vh rgba(0, 0, 0, 0.281);
 
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    transition: transform 0.25s;
-
 }
 .service-line{
    height: 1vh;
    width: 90%;
-   margin-top: 25vh;
-   border-bottom: .4vh solid #ffffff
+   margin-top: 20vh;
+   border-bottom: .2vh solid #ffffff
 }
 .service-name{
    width: 90%;
@@ -337,23 +330,163 @@ header {
    justify-content: end;
 }
 .service img{
-   width: 5vh;
+   width: 4vh;
    position: absolute;
    margin-bottom: 10vh;
-
 }
-.service:hover{
-   transform: scale(1.1);
-   background-color: #413c44;
-}
-
-/* ===================================================SERVICES=================================================== */
+/* ===================================================SKILLS=================================================== */
 
 .skills-section{
+   position: relative;
    height: 100vh;
    background-color: #312d33;
+   box-shadow: 0vh 3vh 5vh 1vh #00000036;
 
 }
+.skills-title-box{
+   height: 5%;
+   width: 100%;
 
+}
+.skills-title{
+   width: 25vh;
+   position: relative;
+   top: -4vh;
+   left: 158vh;
+   color: white;
+   font-size: 1.2rem;
+   font-weight: 800;
+   letter-spacing: .3rem;
+   background-color: #312d33;
+   padding: 1vh;
+   border-radius: 1vh;
+   display: flex;
+   justify-content: center;
+}
+.skills-box-parent{
+   height: 70%;
+   /* border: 0.1vh solid rgba(0, 0, 0, 0.404);  */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.skills-box-child{
+   height: 100%;
+   width: 60%;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   justify-content: center;
+   align-items: center;
+   justify-items: center;
+}
+.skill-card {
+   height: 75%;
+   width: 80%;
+   background-color: #3e3941;
+   font-size: 1rem; 
+   color: white; 
+   padding: 5vh;
+   border-radius: 1vh; 
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+ }
+ .skill-card h1 {
+   margin-bottom: 2vh;
+   font-size: 1.5rem;
+   font-weight: 800;
+ }
+ 
+ /* .skill-card:hover {
+   transform: translateY(-5px);
+ } */
+/* 
+ ===================================================GALLERY=================================================== */
+.gallery-section{
+   height: 120vh; 
+   background-color: #312d33;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.gallery-title-box{
+   height: 1vh;
+   width: 90%;
+   margin-top: 20vh;
+   border-bottom: .4vh solid #464049;
+}
+.gallery-title{
+   width: 20vh;
+   position: relative;
+   top: -.5vh;
+   left: 14vh;
+   color: #ffffff;
+   font-size: 1.2rem;
+   font-weight: 800;
+   letter-spacing: .3rem;
+   background-color: #312d33;
+   display: flex;
+   justify-content: center;
+}
+.gallery-box-parent{
+   height: 90vh;
+   width: 100%;
+   /* border: 0.1vh solid rgba(0, 0, 0, 0.404); */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.gallery-box-child{
+   height: 80%;
+   width: 100%;
+   background: linear-gradient(to right, #C898DF, #552974);
+   box-shadow: inset 0vh 0vh 2vh .5vh rgba(0, 0, 0, 0.5);
+}
+/* 
+ ===================================================FEEEDBACK=================================================== */
+ .feedbacks-section{
+   height: 120vh; 
+   background-color: #312d33;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.feedback-title-box{
+   height: 1vh;
+   width: 90%;
+   margin-top: 20vh;
+   border-bottom: .4vh solid #464049;
+}
+.feedback-title{
+   width: 20vh;
+   position: relative;
+   top: -.5vh;
+   left: 140vh;
+   color: #ffffff;
+   font-size: 1.2rem;
+   font-weight: 800;
+   letter-spacing: .3rem;
+   background-color: #312d33;
+   display: flex;
+   justify-content: center;
+}
+.feedback-box-parent{
+   height: 100%;
+   width: 100%;
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.feedback-box-child{
+   height: 80%;
+   width: 100%;
+   border: 0.1vh solid rgba(0, 0, 0, 0.404);
+}
 /* ===================================================responsive=================================================== */
 
