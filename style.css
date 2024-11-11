@@ -21,7 +21,7 @@ header {
 
 .header-logo {
     z-index: 1;
-    height: 6vh;
+    height: 5vh;
     margin-top: 0vh;
     margin-left: 3vh;
     display: flex;
@@ -63,10 +63,10 @@ header {
 
 
  .home-section{
-    height: 80vh;
+    height: 120vh;
  }
  .home-container{
-   height: 70%;
+   height: 60%;
    background: linear-gradient(to right, #C898DF, #552974);
 }
  .intro-box-parent{
@@ -161,7 +161,7 @@ header {
 
  .interest-section{
     height: 100vh;
-    background-color: #312d33;
+    background-color: #3e3941;   
     color: white;
 
     display: flex;
@@ -169,22 +169,21 @@ header {
     align-items: center;
  }
  .interest-title-box{
-    height: 1vh;
-    width: 90%;
-    margin-top: 10vh;
-    border-bottom: .4vh solid #464049;
+      height: 5%;
+      width: 100%;
  }
  .interest-title{
-    width: 20vh;
-    position: relative;
-    top: -.5vh;
-    left: 140vh;
-    font-size: 1.2rem;
-    font-weight: 800;
-    letter-spacing: .3rem;
-    background-color: #312d33;
-    display: flex;
-    justify-content: center;
+      width: 25vh;
+      position: relative;
+      top: -2.5vh;
+      left: 158vh;
+      color: white;
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: .3rem;
+      text-shadow: 0vh 0vh 2vh #000000a2;
+      display: flex;
+      justify-content: center;
  }
  .interest-box{
     height: 70%;
@@ -245,34 +244,40 @@ header {
 /* ===================================================SERVICES=================================================== */
 
 .services-section{
-   height: 100vh;
+   height: 120vh;
 }
-.top-part{
+.service-top-part{
    height: 30%;
    width: 100%;
    background-color: #312d33;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 
 }
 .message-box{
-   height: 50%;
-   width: 100%;
+   height: 30%;
+   width: 90%;
    color: #ffffff;
    font-size: 3.5rem;
    text-shadow: 0vh 1vh 2vh #00000052;
    font-weight: 800;
    letter-spacing: .2rem;
-   background: linear-gradient(to right, #C898DF, #552974);
-   box-shadow: inset 0vh 0vh 2vh .5vh rgba(0, 0, 0, 0.5);
+   border-bottom: .2vh solid #ffffff;
+   margin-bottom: 10vh;
+   /* border-top: .2vh solid #ffffff; */
+   /* background-color: #312d33; */
+   /* background: linear-gradient(to right, #C898DF, #552974); */
+   /* box-shadow: inset 0vh 0vh 1vh .5vh rgba(0, 0, 0, 0.322); */
    display: flex;
    justify-content: center;
    align-items: center;
 }
-.bot-part{
+.service-bot-part{
    position: relative;
    height: 70%;
    width: 100%;
    background-color: #3e3941;
-   box-shadow: 0vh 0vh 5vh 1vh #00000036;
 }
 .services-title-box{
    height: 5%;
@@ -282,15 +287,13 @@ header {
 .services-title{
    width: 25vh;
    position: relative;
-   top: -4vh;
+   top: -2.5vh;
    left: 15vh;
    color: white;
-   font-size: 1.2rem;
+   font-size: 2rem;
    font-weight: 800;
    letter-spacing: .3rem;
-   background-color: #3e3941;
-   padding: 1vh;
-   border-radius: 1vh;
+   text-shadow: 0vh 0vh 2vh #000000a2;
    display: flex;
    justify-content: center;
 }
@@ -340,32 +343,26 @@ header {
    position: relative;
    height: 100vh;
    background-color: #312d33;
-   box-shadow: 0vh 3vh 5vh 1vh #00000036;
-
 }
 .skills-title-box{
    height: 5%;
    width: 100%;
-
 }
 .skills-title{
    width: 25vh;
    position: relative;
-   top: -4vh;
+   top: -2.5vh;
    left: 158vh;
    color: white;
-   font-size: 1.2rem;
+   font-size: 2rem;
    font-weight: 800;
    letter-spacing: .3rem;
-   background-color: #312d33;
-   padding: 1vh;
-   border-radius: 1vh;
+   text-shadow: 0vh 0vh 2vh #000000a2;
    display: flex;
    justify-content: center;
 }
 .skills-box-parent{
    height: 70%;
-   /* border: 0.1vh solid rgba(0, 0, 0, 0.404);  */
    display: flex;
    justify-content: center;
    align-items: center;
@@ -406,28 +403,35 @@ header {
 /* 
  ===================================================GALLERY=================================================== */
 .gallery-section{
-   height: 120vh; 
-   background-color: #312d33;
+   height: 100vh; 
+   background-color: #3e3941;
+   border: 0.1vh solid rgba(0, 0, 0, 0.404);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.gallery-section-box{
+   width: 100%;
+   position: relative;
    display: flex;
    flex-direction: column;
    align-items: center;
 }
 .gallery-title-box{
-   height: 1vh;
-   width: 90%;
-   margin-top: 20vh;
-   border-bottom: .4vh solid #464049;
+   height: 5%;
+   width: 100%;
+
 }
 .gallery-title{
-   width: 20vh;
+   width: 25vh;
    position: relative;
-   top: -.5vh;
-   left: 14vh;
-   color: #ffffff;
-   font-size: 1.2rem;
+   top: -2.5vh;
+   left: 15vh;
+   color: white;
+   font-size: 2rem;
    font-weight: 800;
    letter-spacing: .3rem;
-   background-color: #312d33;
+   text-shadow: 0vh 0vh 2vh #000000a2;
    display: flex;
    justify-content: center;
 }
@@ -442,35 +446,34 @@ header {
 }
 .gallery-box-child{
    height: 80%;
-   width: 100%;
+   width: 95%;
    background: linear-gradient(to right, #C898DF, #552974);
    box-shadow: inset 0vh 0vh 2vh .5vh rgba(0, 0, 0, 0.5);
 }
 /* 
  ===================================================FEEEDBACK=================================================== */
  .feedbacks-section{
-   height: 120vh; 
-   background-color: #312d33;
+   height: 100vh; 
+   background-color: #3e3941;
    display: flex;
    flex-direction: column;
    align-items: center;
+   border: 0.1vh solid rgba(0, 0, 0, 0.404);
 }
 .feedback-title-box{
-   height: 1vh;
-   width: 90%;
-   margin-top: 20vh;
-   border-bottom: .4vh solid #464049;
+   height: 5%;
+   width: 100%;
 }
 .feedback-title{
-   width: 20vh;
+   width: 25vh;
    position: relative;
-   top: -.5vh;
-   left: 140vh;
-   color: #ffffff;
-   font-size: 1.2rem;
+   top: -2.5vh;
+   left: 158vh;
+   color: white;
+   font-size: 2rem;
    font-weight: 800;
    letter-spacing: .3rem;
-   background-color: #312d33;
+   text-shadow: 0vh 0vh 2vh #000000a2;
    display: flex;
    justify-content: center;
 }
@@ -486,7 +489,124 @@ header {
 .feedback-box-child{
    height: 80%;
    width: 100%;
-   border: 0.1vh solid rgba(0, 0, 0, 0.404);
+   /* border: 0.1vh solid rgba(0, 0, 0, 0.404); */
 }
+/* 
+ ===================================================FOOTER=================================================== */
+ .footer-section{
+   height: 70vh; 
+   background-color: #312d33;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.footer-top-part{
+   height: 60%;
+   width: 100%;
+   font-size: .8rem;
+   color: #868686;
+   letter-spacing: .2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 8vh;
+}
+.footer-logo-box{
+   height: 45%;
+   width: 12vh;
+
+}
+.footer-logo{
+   height: 5vh;
+   display: flex;
+}
+.footer-services-box{
+   height: 70%;
+   width: 30vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 2vh;
+}
+.footer-services-box h1{
+   font-size: .8rem;
+   font-weight: 600;
+   color: #ffffff;
+}
+.footer-services{
+   height: 3vh;
+   display: flex;
+   align-items: center; 
+}
+.footer-contact-box{
+   height: 70%;
+   width: 60vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 2vh;
+}
+.footer-contact-box h1{
+   font-size: .8rem;
+   font-weight: 600;
+   color: #ffffff;
+}
+.footer-contact{
+   height: 3vh;
+   display: flex;
+   align-items: center;
+   gap: 2vh;
+}
+.footer-contact img{
+   height: 2vh;
+   display: flex;
+}
+
+.footer-bot-part{
+   height: 40%;
+   width: 100%;
+   font-size: .6rem;
+   color: #ffffff;
+   letter-spacing: .2rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.footer-divider{
+   height: 1vh;
+   width: 90%;
+   margin-top: 1vh;
+   border-bottom: .2vh solid #ffffff;
+}
+.footer-socmed{
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 2vh;
+}
+.footer-socmed img{
+   height: 7vh;
+   padding: 2vh;
+   /* border: 0.1vh solid rgba(0, 0, 0, 0.404); */
+   display: flex;
+   transition: transform 0.3s;
+}
+.footer-socmed img:hover{
+   transform: scale(1.2);
+}
+.copyright{
+   height: 5vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1vh;
+}
+.copyright img{
+   height: 1vh;
+   display: flex;
+}
+
 /* ===================================================responsive=================================================== */
 
