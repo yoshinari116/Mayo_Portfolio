@@ -7,7 +7,7 @@
 
 header {
     position: fixed;
-    z-index: 3;
+    z-index: 11;
     height: 8vh;
     width: 100%;
     background: linear-gradient(to right, #C898DF, #552974);
@@ -71,14 +71,16 @@ header {
 }
  .intro-box-parent{
     height: 100%;
-    width: 80%;
+    width: 100%;
     border: 0.1vh solid rgba(0, 0, 0, 0.404); 
     color: white;
+
     display: flex;
     align-items: center;
  }
- .intro-box-child{  
-    width: 100%;
+ .intro-box-child-A{  
+   height: 100%;
+    width: 50%;
     margin-left: 25vh;
     gap: 1rem;
     display: flex;
@@ -89,17 +91,17 @@ header {
     font-size: 1.5rem;
  }
  .occupation{
-    width: 60%;
+    width: 100%;
     font-size: 3rem;
     font-weight: 800;
     line-height: 3rem;
  }
  .intro-desc{
-    width: 50%;
+    width: 80%;
     font-size: 1rem;
     word-spacing: .5rem;
  }
- .intro-box-child a{
+ .intro-box-child-A a{
     width: 7rem;
     text-decoration: none;
     background-color: #312d33;
@@ -114,9 +116,22 @@ header {
     display: flex;
     justify-content: center;
  }
- .intro-box-2 a:hover{
-    transform: scale(1.2);
+.intro-box-child-A a:hover{
+    transform: scale(1.1);
  }
+ .intro-box-child-B {
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+   height: 100%;
+}
+.intro-box-child-B img {
+   height: 90%; 
+   object-fit: cover;
+   object-position: bottom;
+
+}
+
 
  /* ===================================================ABOUT=================================================== */
 
@@ -175,7 +190,7 @@ header {
  .interest-title{
       width: 25vh;
       position: relative;
-      top: -2.5vh;
+      top: -3vh;
       left: 158vh;
       color: white;
       font-size: 2rem;
@@ -287,7 +302,7 @@ header {
 .services-title{
    width: 25vh;
    position: relative;
-   top: -2.5vh;
+   top: -3vh;
    left: 15vh;
    color: white;
    font-size: 2rem;
@@ -306,7 +321,7 @@ header {
 }
 .service{
    height: 60%;
-   width:25vh;
+   width:30vh;
    background-color: #3e3941;
    font-size: 1rem;
    font-weight: 500;
@@ -351,7 +366,7 @@ header {
 .skills-title{
    width: 25vh;
    position: relative;
-   top: -2.5vh;
+   top: -3vh;
    left: 158vh;
    color: white;
    font-size: 2rem;
@@ -402,7 +417,7 @@ header {
  } */
 /* 
  ===================================================GALLERY=================================================== */
-.gallery-section{
+ .gallery-section {
    height: 100vh; 
    background-color: #3e3941;
    border: 0.1vh solid rgba(0, 0, 0, 0.404);
@@ -410,22 +425,24 @@ header {
    flex-direction: column;
    align-items: center;
 }
-.gallery-section-box{
+
+.gallery-section-box {
    width: 100%;
    position: relative;
    display: flex;
    flex-direction: column;
    align-items: center;
 }
-.gallery-title-box{
+
+.gallery-title-box {
    height: 5%;
    width: 100%;
-
 }
-.gallery-title{
+
+.gallery-title {
    width: 25vh;
    position: relative;
-   top: -2.5vh;
+   top: -3vh;
    left: 15vh;
    color: white;
    font-size: 2rem;
@@ -435,21 +452,115 @@ header {
    display: flex;
    justify-content: center;
 }
-.gallery-box-parent{
+
+.gallery-box-parent {
    height: 90vh;
    width: 100%;
-   /* border: 0.1vh solid rgba(0, 0, 0, 0.404); */
+   border: 0.1vh solid rgba(0, 0, 0, 0.404);
    display: flex;
    justify-content: center;
    align-items: center;
-
 }
-.gallery-box-child{
+
+.gallery-box-child {
    height: 80%;
    width: 95%;
    background: linear-gradient(to right, #C898DF, #552974);
-   box-shadow: inset 0vh 0vh 2vh .5vh rgba(0, 0, 0, 0.5);
+   box-shadow: inset 0vh 0vh 2vh 0.5vh rgba(0, 0, 0, 0.5);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   padding: 4vh 0; /* Add space at the top and bottom */
 }
+
+.gallery-slider {
+   position: relative;
+   height: 100%;
+   width: 100%;
+   margin: 0 auto;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.slider-wrapper {
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.slider {
+   display: flex;
+   transition: transform 0.5s ease-in-out;
+   gap: 6vh;
+   width: calc(3 * 30% + 2 * 6vh);
+}
+
+.gallery-item {
+   flex: 0 0 calc((100% - 2 * 6vh) / 3);
+   aspect-ratio: 3 / 4;
+   background-color: #444;
+   border-radius: 2vh;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.image-placeholder {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+   width: 100%;
+   overflow: hidden;
+   border-radius: 1vh;
+   position: relative;
+}
+
+.image-placeholder img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+   border-radius: inherit;
+}
+
+.arrow {
+   background: none;
+   border: none;
+   color: #ffffff;
+   font-size: 10vh;
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   z-index: 10;
+   transition: transform 0.2s, box-shadow 0.2s;
+   text-shadow: 0 0vh 2vh rgb(0, 0, 0); 
+}
+
+.arrow:hover {
+   transform: translateY(-50%) scale(1.2);
+   text-shadow: 0 0vh 2vh rgba(0, 0, 0, 1); 
+}
+
+.left-arrow {
+   left: 2vh;
+}
+
+.right-arrow {
+   right: 2vh;
+}
+
+
+
 /* 
  ===================================================FEEEDBACK=================================================== */
  .feedbacks-section{
